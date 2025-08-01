@@ -1,0 +1,280 @@
+{
+  // WORKBENCH SETTINGS
+  "workbench.iconTheme": "material-icon-theme",
+  "breadcrumbs.enabled": false,
+  "chat.commandCenter.enabled": false,
+  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+  "terminal.integrated.fontLigatures.enabled": true,
+  "telemetry.telemetryLevel": "off",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+  // TERMINAL SETTINGS
+  "terminal.integrated.defaultLocation": "editor",
+  "terminal.integrated.tabs.enabled": true,
+  // LANG Specific configurations
+  "[javascript]": {},
+  "[typescript]": {},
+  "[TypeScript JSX]": {},
+  "[typescriptreact]": {},
+  "[python]": {},
+  // Language-specific global behavior
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // GIT INLINE CONFIGs
+  "git.blame.statusBarItem.enabled": true,
+  "git.blame.editorDecoration.enabled": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+  // VIM SETTINGS
+  "vim.leader": " ",
+  "vim.commandLineModeKeyBindings": [],
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-s>": false,
+    "<C-z>": false
+  },
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.createTerminalEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "g"
+      ],
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "c",
+        "d"
+      ],
+      "commands": [
+        "workbench.view.explorer"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.showAllSymbols"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "d"
+      ],
+      "commands": [
+        "workbench.actions.view.problems",
+        "editor.action.problems.focus"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "c",
+        "a"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
+    },
+    {
+      "before": [
+        "r",
+        "n"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
+    },
+    {
+      "before": [
+        "<tab>"
+      ],
+      "commands": [
+        "workbench.action.nextEditor"
+      ]
+    },
+    {
+      "before": [
+        "<S-tab>"
+      ],
+      "commands": [
+        "workbench.action.previousEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "j",
+        "k"
+      ],
+      "commands": [
+        ":w"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "j",
+        "q"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "F"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.showHover"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "l",
+        "g"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.createTerminalEditor"
+        },
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "lazygit\u000D"
+          }
+        }
+      ]
+    },
+  ],
+  // ADD YANK TO CLIPBOARD
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "y"
+      ],
+      "after": [
+        "\"",
+        "+",
+        "y"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "j"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "k"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "y",
+        "y"
+      ],
+      "after": [
+        "\"",
+        "+",
+        "y",
+        "y"
+      ]
+    }
+  ],
+  // FILE SEARCH PERFM and REDUCE UI CLUTTER ===
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.hg/store/**": true,
+    "**/build/**": true,
+    "**/node_modules/**": true
+  },
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/Thumbs.db": true,
+    "build": true,
+    "env": true,
+    "packageInfo*": true,
+    "release-info": true,
+    "src/*/build": true
+  },
+  "search.exclude": {
+    "**/*.code-search": true,
+    "**/bower_components": true,
+    "**/node_modules": true,
+    "build": true,
+    "env": true,
+    "src/*/build": true
+  },
+}
