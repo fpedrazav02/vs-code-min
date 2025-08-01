@@ -7,18 +7,13 @@
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
     {
-        "key": "shift+tab",
-        "command": "selectPrevSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-    },
-    {
         "key": "tab",
         "command": "workbench.action.quickOpenNavigateNext",
         "when": "inQuickOpen"
     },
     {
-        "key": "ctrl+tab",
-        "command": "list.focusUp",
+        "key": "shift+tab",
+        "command": "workbench.action.quickOpenNavigatePrevious",
         "when": "inQuickOpen"
     }
 ]
