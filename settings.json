@@ -1,6 +1,7 @@
 {
   // WORKBENCH SETTINGS
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "GitHub Dark Default",
   "breadcrumbs.enabled": false,
   "chat.commandCenter.enabled": false,
   "editor.fontFamily": "FiraCode Nerd Font",
