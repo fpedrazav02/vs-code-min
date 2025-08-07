@@ -72,10 +72,6 @@
       "commands": ["testing.runCurrentFile"]
     },
     {
-      "key": "ctrl+alt+v",
-      "command": "toggleVim"
-    },
-    {
       "before": [
         "<leader>",
         "f",
