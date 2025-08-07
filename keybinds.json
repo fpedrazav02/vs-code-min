@@ -61,5 +61,10 @@
     {
         "key": "cmd+0",
         "command": "workbench.action.openEditorAtIndex10"
+    },
+    //TOGGLE VIM
+    {
+        "key": "ctrl+alt+v",
+        "command": "toggleVim"
     }
 ]
