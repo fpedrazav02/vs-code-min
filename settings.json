@@ -55,6 +55,18 @@
   },
   "vim.normalModeKeyBindings": [
     {
+      "before": ["g", "l"],
+      "after": ["$"]
+    },
+    {
+      "before": ["g", "h"],
+      "after": ["0"]
+    },
+    {
+      "before": ["x"],
+      "after": ["V"]
+    },
+    {
       "before": [
         "<leader>",
         "t"
