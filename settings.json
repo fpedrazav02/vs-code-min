@@ -55,6 +55,14 @@
   },
   "vim.normalModeKeyBindings": [
     {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
       "before": ["g", "l"],
       "after": ["$"]
     },
